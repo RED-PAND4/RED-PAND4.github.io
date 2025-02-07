@@ -1,278 +1,135 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <title> - KnowDive Research Group</title>
-    <link rel="shortcut icon" href="/DUniversity-COS/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/DUniversity-COS/assets/css/just-the-docs-default.css">
-    <script src="/DUniversity-COS/assets/js/vendor/lunr.min.js"></script>
-    <script src="/DUniversity-COS/assets/js/just-the-docs.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Begin Jekyll SEO tag v2.8.0 -->
-    <title>DUniversity C+O+S | Repository for DUniversity COS data integration project</title>
-    <meta name="generator" content="Jekyll v3.9.2"/>
-    <meta property="og:title" content="DUniversity C+O+S"/>
-    <meta property="og:locale" content="en_US"/>
-    <meta name="description" content="Repository for DUniversity COS data integration project"/>
-    <meta property="og:description" content="Repository for DUniversity COS data integration project"/>
-    <link rel="canonical" href="https://bocchilorenzo.github.io/DUniversity-COS/"/>
-    <meta property="og:url" content="https://bocchilorenzo.github.io/DUniversity-COS/"/>
-    <meta property="og:site_name" content="DUniversity C+O+S"/>
-    <meta property="og:type" content="website"/>
-    <meta name="twitter:card" content="summary"/>
-    <meta property="twitter:title" content="DUniversity C+O+S"/>
-    <script type="application/ld+json"> {"@context":"https://schema.org","@type":"WebSite","description":"Repository for DUniversity COS data integration project","headline":"DUniversity C+O+S","name":"DUniversity C+O+S","url":"https://bocchilorenzo.github.io/DUniversity-COS/"}</script>
-    <!-- End Jekyll SEO tag -->
-</head>
-<body>
-    <a class="skip-to-main" href="#main-content">Skip to main content</a>
-    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-        <symbol id="svg-link" viewBox="0 0 24 24">
-            <title>Link</title>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
-                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
-                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
-            </svg>
-        </symbol>
-        <symbol id="svg-search" viewBox="0 0 24 24">
-            <title>Search</title>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
-                <circle cx="11" cy="11" r="8"></circle>
-                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-            </svg>
-        </symbol>
-        <symbol id="svg-menu" viewBox="0 0 24 24">
-            <title>Menu</title>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
-                <line x1="3" y1="12" x2="21" y2="12"></line>
-                <line x1="3" y1="6" x2="21" y2="6"></line>
-                <line x1="3" y1="18" x2="21" y2="18"></line>
-            </svg>
-        </symbol>
-        <symbol id="svg-arrow-right" viewBox="0 0 24 24">
-            <title>Expand</title>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
-                <polyline points="9 18 15 12 9 6"></polyline>
-            </svg>
-        </symbol>
-        <symbol id="svg-doc" viewBox="0 0 24 24">
-            <title>Document</title>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file">
-                <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
-                <polyline points="13 2 13 9 20 9"></polyline>
-            </svg>
-        </symbol>
-        <!-- Feather. MIT License: https://github.com/feathericons/feather/blob/master/LICENSE -->
-        <symbol id="svg-external-link" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
-            <title id="svg-external-link-title">(external link)</title>
-            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-            <polyline points="15 3 21 3 21 9"></polyline>
-            <line x1="10" y1="14" x2="21" y2="3"></line>
-        </symbol>
-    </svg>
-    <div class="side-bar">
-        <div class="site-header">
-            <a href="/DUniversity-COS/" class="site-title lh-tight"> DUniversity C+O+S </a>
-            <a href="#" id="menu-button" class="site-button">
-                <svg viewBox="0 0 24 24" class="icon">
-                    <use xlink:href="#svg-menu"></use>
-                </svg>
-            </a>
-        </div>
-        <nav aria-label="Main" id="site-nav" class="site-nav"></nav>
-        <footer class="site-footer">
-             This site uses 
-            <a href="https://github.com/just-the-docs/just-the-docs">Just the Docs</a>
-            , a documentation theme for Jekyll. 
-        </footer>
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>KGE-2024-KnowDive-Research-Group-Project | Repository for KnowDive Research Group project</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="KGE-2024-KnowDive-Research-Group-Project" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Repository for KnowDive Research Group project" />
+<meta property="og:description" content="Repository for KnowDive Research Group project" />
+<link rel="canonical" href="https://RED-PAND4.github.io/KGE-2024-KnowDive-Research-Group-Project/" />
+<meta property="og:url" content="https://RED-PAND4.github.io/KGE-2024-KnowDive-Research-Group-Project/" />
+<meta property="og:site_name" content="KGE-2024-KnowDive-Research-Group-Project" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="KGE-2024-KnowDive-Research-Group-Project" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"Repository for KnowDive Research Group project","headline":"KGE-2024-KnowDive-Research-Group-Project","name":"KGE-2024-KnowDive-Research-Group-Project","url":"https://RED-PAND4.github.io/KGE-2024-KnowDive-Research-Group-Project/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/KGE-2024-KnowDive-Research-Group-Project/assets/css/style.css?v=5c40a526c9609385d3c9278a202469aa7c701927">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/KGE-2024-KnowDive-Research-Group-Project/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="https://RED-PAND4.github.io/KGE-2024-KnowDive-Research-Group-Project/">KGE-2024-KnowDive-Research-Group-Project</a></h1>
+      
+
+      <p><strong>Authors: </strong> Aloisi Deborah & Giaretta Leonardo</p>
+
+<p>This project resulted from the 2024/2025 Knowledge Graph Engineering class of Prof. Fausto Giunchiglia at UniTn.</p>
+
+
+<p>This page describes the process and outcome of the engineering of a knowledge graph about “KnowDive Research Group”. 
+    The graph consists of a knowledge layer and a data layer.
+    Entities are instances of the E-type classes, which have their own data properties, as well as object properties which connect them.
+
+    The project has been implemented following the <a href="https://doi.org/10.48550/arxiv.2105.09418">iTelos</a> methodology 
+    which provides a schema to follow implementing phase after phase and achieving intermediate and eventually final results. 
+    This is done with the aim to not only create a graph for the specific case in hand, but to also allow for potential reuse and expansion.
+</p>
+<h3 id="purpose-and-domain-of-interest">Purpose and Domain of Interest</h3>
+The main purpose of this project as expressed by the final user is the following:
+
+"A service which helps the users to query and know about all the products and the people that are working or were working in the Knowdive research group at the University of Trento"
+
+<h3 id="Layers">Layers</h3>
+This project evaluate the following layers of the iTelos methodology:
+<p>• <strong>Language Layer:</strong> any linguistic resource - property or dataset about languages and terms
+used - should be explicitly referenced to increase re-usability.</p>
+
+<p>• <strong>Knowledge Layer:</strong> any Knowledge Base encoding information about KG schemas (etypes
+and properties). If detailed enough, this layer could be decomposed in its core elements:
+ontology and teleology, thus giving the user an unprecedented insight into the conceptual
+and relational data shaping behind the actual data values representation.</p>
+
+<p>• <strong>Data layer:</strong> any dataset which consists of data in some format, instantiating the KG’s struc-
+ture (entities and attributes).</p>
+
+<h3 id="Language-Resources">Language Resources</h3>
+<p>Language resources are essential for the project, as they allow the user to understand the data and the language layer. 
+    In this project, we have used the following language resources:</p> 
+    <p>• <strong>LiveDataUNITN: </strong><a href="https://datascientiafoundation.github.io/LiveDataUNITN/datasets/DU-UNITN-language/">DU-UNITN-Language</a></p>
+    <p>• <strong>KRG-UNITN Language: </strong>the dataset is created for collecting and describing the term used into the  data of the Knowdive Research Group.</p>
+
+<h3 id="Knowledge-Resources">Knowledge Resources</h3>
+<p>Knowledge resources are essential for the project, as they allow the user to understand the data and the knowledge layer. 
+    In this project, we have used the following knowledge resources:</p> 
+    <p>• <strong>Digital University Ontology: </strong><a href="https://datascientiafoundation.github.io/LiveDataUNITN/datasets/DU-UNITN-ontology/">DU-UNITN-ontology</a></p>
+    <p>• <strong>VIVO Core Ontology</strong><a href="http://liveschema.eu/dataset/lov_vivo">VIVO</a></p>
+    <p>• <strong>Academic Institution Internal Structure Ontology: </strong><a href="http://liveschema.eu/dataset/lov_aiiso">AIISO</a></p>
+    <p>• <strong>Semantic Web for Research Communities: </strong><a href="http://liveschema.eu/dataset/lov_swrc">SWRC</a></p>
+
+
+
+
+
+
+<p>If users are interested in expanding data resources, they can
+use the already existing schemas as meaningful anchors, without loosing data quality.
+Data Scientia users should have access to both projects and their layers and decide what to
+re-use, modify or produce to meet the purpose they have in mind. Projects should be linked
+based on their similarities on a general and layered basis.
+Metadata play a crucial role in this context because they describe datasets and repre-
+sent the connections between them, making resources findable and addressable without any
+effort. For example, users looking for healthcare ontologies should be able to access them
+directly, without having to go through whole projects at the risk of stepping away from their
+purpose. Metadata reduces search time and space: they allow users to skip to what is essential
+to them, making the Data Scientia successful and meaningful.
+Our project purpose can now be stated unambiguously:</p>
+
+<p><em>A KG supporting the Data Scientia web portal’s users to find the most suitable resource
+for their needs, as well as all the resources linked by the one searched.</em></p>
+
+<p>To achieve the project objective, we have analyzed existing KGE Projects and Data Scientia resources and projects, which were our data resources. We have extracted the
+fundamental layered view of datasets from KGE Projects and we have outlined Data Scientia main entity types, along with their properties, by carefully examining the web portal and through
+a Data Scientia top level description and requirements given to us by the domain expert. The
+latter helped us understanding the preliminary boundaries of our schema resources, by stating
+the present structure of the portal with its shortcomings: the absence of linked resources and
+informational layers. To overcome them, we have designed a possible and plausible future
+structure for the Data Scientia web portal, by defining its Knowledge Graph.</p>
+
+<p>The following image shows our final EG obtained using Karma Linker and GraphDB.
+<img src="https://github.com/AleRaho/KGE-2022-Metadata-Project/blob/main/Final_EG.png?raw=true" alt="alt text" /></p>
+
+<p>You can explore deeper our work in our <a href="https://github.com/RED-PAND4/KGE-2024-KnowDive-Research-Group-Project">public repository</a>.</p>
+
+<p>In our <a href="https://github.com/RED-PAND4/KGE-2024-KnowDive-Research-Group-Project/blob/main/Documentation/KGE-2024-KnowDive-Research-Group-Project_Report.pdf">Project Report</a>, stored in the git repository as well, you will find a detailed step-by-step description in which we tried to 
+    explain how we managed to produce our KG using the iTelos metodology.</p>
+
+      
+      <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
+        This site is open source. <a href="https://github.com/AleRaho/KGE-2022-Metadata-Project/edit/main/README.md">Improve this page</a>.
+      </div>
+      
     </div>
-    <div class="main" id="top">
-        <div id="main-header" class="main-header">
-            <div class="search">
-                <div class="search-input-wrap">
-                    <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search DUniversity C+O+S" aria-label="Search DUniversity C+O+S" autocomplete="off">
-                    <label for="search-input" class="search-label">
-                        <svg viewBox="0 0 24 24" class="search-icon">
-                            <use xlink:href="#svg-search"></use>
-                        </svg>
-                    </label>
-                </div>
-                <div id="search-results" class="search-results"></div>
-            </div>
-        </div>
-        <div id="main-content-wrap" class="main-content-wrap">
-            <div id="main-content" class="main-content" role="main">
-                <p>Official website for the Knowledge Graph Engineering course at the University of Trento for the academic year 2022/2023.</p>
-                <h2 id="introduction">
-                    <a href="#introduction" class="anchor-heading" aria-labelledby="introduction">
-                        <svg viewBox="0 0 16 16" aria-hidden="true">
-                            <use xlink:href="#svg-link"></use>
-                        </svg>
-                    </a>
-                     Introduction 
-                </h2>
-                <p>
-                    The University of Trento offers many courses and employs many people with different roles in different organizational units. The aim of this project is to create a knowledge graph to represent the courses, people and organizational units of the University. The methodology followed was iTelos, which can be explored by reading the following paper on 
-                    <a href="https://arxiv.org/abs/2105.09418">arXiv</a>
-                    .
-                </p>
-                <p>For more details about the project, it’s recommended to read the report which can be found inside the repository on Github. Following are some excerpts from the report.</p>
-                <h2 id="project-repository">
-                    <a href="#project-repository" class="anchor-heading" aria-labelledby="project-repository">
-                        <svg viewBox="0 0 16 16" aria-hidden="true">
-                            <use xlink:href="#svg-link"></use>
-                        </svg>
-                    </a>
-                     Project repository 
-                </h2>
-                <p>
-                    The repository for the project can be found at 
-                    <a href="https://github.com/bocchilorenzo/DUniversity-COS">https://github.com/bocchilorenzo/DUniversity-COS</a>
-                    .
-                </p>
-                <h2 id="purpose-and-domain">
-                    <a href="#purpose-and-domain" class="anchor-heading" aria-labelledby="purpose-and-domain">
-                        <svg viewBox="0 0 16 16" aria-hidden="true">
-                            <use xlink:href="#svg-link"></use>
-                        </svg>
-                    </a>
-                     Purpose and domain 
-                </h2>
-                <p>The previously presented aim can be described in form of a user request as follows:</p>
-                <blockquote>
-                    <p>A service which helps the users to query and know about the different courses being taught at the University of Trento supported by its organizational structure.</p>
-                </blockquote>
-                <p>The general scope of the project concerns the University of Trento, particularly the information about the courses taught, the staff/teachers and the organizational structure. As far as time is concerned, the scope is the current academic year. The spatial scope is represented by the University itself. Since it has multiple faculties and departments, it can be represented by the centroid of the coordinates of the various departments. Namely: latitude 46.0673894, longitude 11.1148277 and an average altitude of 272 meters.</p>
-                <h2 id="reference-ontologies">
-                    <a href="#reference-ontologies" class="anchor-heading" aria-labelledby="reference-ontologies">
-                        <svg viewBox="0 0 16 16" aria-hidden="true">
-                            <use xlink:href="#svg-link"></use>
-                        </svg>
-                    </a>
-                     Reference ontologies 
-                </h2>
-                <p>The existing ontologies that were used to extract the ETypes are:</p>
-                <ul>
-                    <li>VIVO Core Ontology, which is suitable for the institutional organization in an academic setting</li>
-                    <li>Academic Institution Internal Structure Ontology, also particularly powerful for the organizational structure of an academic institution</li>
-                    <li>Semantic Web for Research Communities, containing useful classes concerning persons and their positions in a research or academic setting</li>
-                </ul>
-                <h2 id="datasets">
-                    <a href="#datasets" class="anchor-heading" aria-labelledby="datasets">
-                        <svg viewBox="0 0 16 16" aria-hidden="true">
-                            <use xlink:href="#svg-link"></use>
-                        </svg>
-                    </a>
-                     Datasets 
-                </h2>
-                <p>The datasets used come from:</p>
-                <ul>
-                    <li>
-                        <p>
-                            <a href="https://dati.trentino.it">OPENdata Trentino</a>
-                            , an open data portal for the region of Trentino, where three dataset were found to be relevant for our purpose:
-                        </p>
-                        <ul>
-                            <li>
-                                <a href="https://dati.trentino.it/dataset/courses-and-degree-programs-offered-by-the-university-of-trento">Courses and degree programs offered by the University of Trento</a>
-                            </li>
-                            <li>
-                                <a href="https://dati.trentino.it/dataset/staff-of-the-university-of-trento">Staff of the University of Trento</a>
-                            </li>
-                            <li>
-                                <a href="https://dati.trentino.it/dataset/organizational-units-of-the-university-of-trento">Organizational units of the University of Trento</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="https://www.esse3.unitn.it/Root.do">Esse3</a>
-                        , which offres more in-depth information for the courses
-                    </li>
-                    <li>
-                        <a href="https://www.openstreetmap.org">OpenStreetMap</a>
-                        , which provides geospatial data on the varuous University facilities
-                    </li>
-                </ul>
-                <h2 id="etg">
-                    <a href="#etg" class="anchor-heading" aria-labelledby="etg">
-                        <svg viewBox="0 0 16 16" aria-hidden="true">
-                            <use xlink:href="#svg-link"></use>
-                        </svg>
-                    </a>
-                     ETG 
-                </h2>
-                <p>
-                    To create the ETG, the tools 
-                    <a href="https://protege.stanford.edu/">Protégé</a>
-                     and the iTelos KOS web app were used. Protégé was used to create the OWL/RDF file with all the classes, data properties and object properties. KOS was used to guide the process from the inception of the project to the language alignment of the teleontology. The ETG can be found at 
-                    <a href="https://github.com/bocchilorenzo/DUniversity-COS/blob/main/Teleologies/Formal%20Modeling/DUniversity%20COS-5v0-aligned_ontology_clean.owl">https://github.com/bocchilorenzo/DUniversity-COS/blob/main/Teleologies/Formal%20Modeling/DUniversity%20COS-5v0-aligned_ontology_clean.owl</a>
-                    .
-                </p>
-                <h3 id="classes">
-                    <a href="#classes" class="anchor-heading" aria-labelledby="classes">
-                        <svg viewBox="0 0 16 16" aria-hidden="true">
-                            <use xlink:href="#svg-link"></use>
-                        </svg>
-                    </a>
-                     Classes 
-                </h3>
-                <p>
-                    <img src="classes.png" alt="ETG classes" title="Classes"/>
-                </p>
-                <h3 id="data-properties">
-                    <a href="#data-properties" class="anchor-heading" aria-labelledby="data-properties">
-                        <svg viewBox="0 0 16 16" aria-hidden="true">
-                            <use xlink:href="#svg-link"></use>
-                        </svg>
-                    </a>
-                     Data properties 
-                </h3>
-                <p>
-                    <img src="data.png" alt="ETG data properties" title="Data properties"/>
-                </p>
-                <h3 id="object-properties">
-                    <a href="#object-properties" class="anchor-heading" aria-labelledby="object-properties">
-                        <svg viewBox="0 0 16 16" aria-hidden="true">
-                            <use xlink:href="#svg-link"></use>
-                        </svg>
-                    </a>
-                     Object properties 
-                </h3>
-                <p>
-                    <img src="obj.png" alt="ETG object properties" title="Object properties"/>
-                </p>
-                <h2 id="kg">
-                    <a href="#kg" class="anchor-heading" aria-labelledby="kg">
-                        <svg viewBox="0 0 16 16" aria-hidden="true">
-                            <use xlink:href="#svg-link"></use>
-                        </svg>
-                    </a>
-                     KG 
-                </h2>
-                <p>
-                    To build the knowledge graph, the JSON datasets were mapped to the ETG with the help of 
-                    <a href="https://usc-isi-i2.github.io/karma/">Karma</a>
-                    , which produced a series of Turtle file in output which were then imported in 
-                    <a href="https://graphdb.ontotext.com/">GraphDB</a>
-                    . The final datasets can be obtained at 
-                    <a href="https://github.com/bocchilorenzo/DUniversity-COS/tree/main/Datasets/Data%20Integration">https://github.com/bocchilorenzo/DUniversity-COS/tree/main/Datasets/Data%20Integration</a>
-                    .
-                </p>
-                <h3 id="example-mapping">
-                    <a href="#example-mapping" class="anchor-heading" aria-labelledby="example-mapping">
-                        <svg viewBox="0 0 16 16" aria-hidden="true">
-                            <use xlink:href="#svg-link"></use>
-                        </svg>
-                    </a>
-                     Example mapping 
-                </h3>
-                <p>
-                    <img src="degree_program_karma.png" alt="Karma mapping" title="Karma mapping"/>
-                </p>
-            </div>
-        </div>
-        <div class="search-overlay"></div>
-    </div>
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  </body>
 </html>
